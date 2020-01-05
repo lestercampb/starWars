@@ -1,0 +1,24 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    color: lightseagreen;
+}
+.btn-group {
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+}
+
+.btn-secondary {
+    margin: 1% 1% 1% 1%;
+}
+
+#list-tab {
+    margin: 2% 2% 2% 2%;
+}
+
+.tab-content {
+    display: flex;
+    float: right;
+    align-items: flex-start;
+}
+

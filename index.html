@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="starWars.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Star Wars API</title>
+</head>
+<body>
+    <h1>Star Wars Data Search</h1>
+    <!--Search buttons-->
+    <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary" id="people">People</button>
+            <button type="button" class="btn btn-secondary" id="planets">Planets</button>
+            <button type="button" class="btn btn-secondary" id="starships">Starships</button>
+            <button type="button" class="btn btn-secondary" id="species">Species</button>
+          </div>
+    <!--Results section-->
+    <!--List on left of screen, populates upon click at top-->
+    <div class="row">
+        <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list" href ="" role="tab">1</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list" href="" role="tab">2</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list"  href="" role="tab">3</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list"  href="" role="tab">4</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list" href="" role="tab">5</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list" href="" role="tab">6</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list" href ="" role="tab">7</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list" href="" role="tab">8</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list"  href="" role="tab">9</a>
+                    <a class="list-group-item list-group-item-action list-group-item-info" data-toggle="list" href="" role="tab">10</a>
+                
+         
+            </div>
+        </div>
+    
+
+    <!--details on right of screen, populates upon click at left-->
+    <div class="col-4">
+        <!--PEOPLE DEETS TABLE HERE-->
+        <fieldset>
+                <table class="table table-hover" id="peopleDeets">
+
+                        
+                       <!-- <tbody> -->
+                          <tr>
+                            <th scope="row">Name</th>
+                            <td id="name">Larry the Bird </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Gender</th>
+                            <td id="gender">Larry the Bird</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Height (in cm)</th>
+                            <td id="height">Larry the Bird</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Mass (in kg)</th>
+                            <td id="mass">Larry the Bird</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">Hair Color</th>
+                            <td id="hair">Larry the Bird</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">Eye Color</th>
+                            <td id="eye">Larry the Bird</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Skin Color</th>
+                                <td id="skin">Larry the Bird</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">Birth Year</th>
+                            <td id="birthYear">Larry the Bird</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">Homeworld</th>
+                            <td id="homeworld">Earth</td>
+                        </tr>
+                       
+                    </table>
+                
+
+
+<!--PLANET DEETS TABLE HERE-->
+                    <table class="table table-hover" id="planetDeets">      
+                          <!--  <tbody> -->
+                              <tr>
+                                <th scope="row">Name</th>
+                                <td id="namePlanet">Larry the Bird </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Population</th>
+                                <td id="population">Larry the Bird</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Diameter</th>
+                                <td id="diameter">Earth</td>
+                            </tr>
+                              <tr>
+                                <th scope="row">Climate</th>
+                                <td id="climate">Larry the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Gravity</th>
+                                <td id="gravity">Larry the Bird</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Surface Water (%)</th>
+                                <td id="water">Larry the Bird</td>
+                            </tr>
+                                <tr>
+                                <th scope="row">Terrain</th>
+                                <td id="terrain">Larry the Bird</td>
+                                </tr>
+                              <tr>
+                                <th scope="row">Rotation Period</th>
+                                <td id="rotation">Larry the Bird</td>
+                                </tr>
+                              <tr>
+                                <th scope="row">Orbital Period</th>
+                                <td id="orbit">Larry the Bird</td>
+                                </tr>
+                             
+                        </table>
+                           
+                         <!--  </tbody> -->
+
+            <!--STARSHIP DEETS TABLE HERE-->
+
+                            <table class="table table-hover" id="starshipDeets">      
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">Name</th>
+                                        <td id="nameShip">Larry the Bird </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Model</th>
+                                        <td id="model">Larry the Bird</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Starship Class</th>
+                                        <td id="starship_class">Earth</td>
+                                    </tr>
+                                      <tr>
+                                        <th scope="row">Manufacturer</th>
+                                        <td id="manufacturer">Larry the Bird</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Cost in Credits</th>
+                                        <td id="cost_in_credits">Larry the Bird</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Length (meters)</th>
+                                        <td id="length">Larry the Bird</td>
+                                    </tr>
+                                        <tr>
+                                        <th scope="row">Number of Crew Required</th>
+                                        <td id="crew">Larry the Bird</td>
+                                        </tr>
+                                      <tr>
+                                        <th scope="row">Maximum Megalights Traveled per Hour</th>
+                                        <td id="MLGT">Larry the Bird</td>
+                                        </tr>
+                                      <tr>
+                                        <th scope="row">Cargo Capacity (kg)</th>
+                                        <td id="cargo_capacity">Larry the Bird</td>
+                                        </tr>
+                                     
+                                </table>
+                                   
+                                    </tbody>
+
+            <!--SPECIES DEETS TABLE HERE-->
+
+                            <table class="table table-hover" id="speciesDeets">      
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">Name</th>
+                                        <td id="nameSpecies">Larry the Bird </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Classification</th>
+                                        <td id="classification">Larry the Bird</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Designation</th>
+                                        <td id="designation">Earth</td>
+                                    </tr>
+                                      <tr>
+                                        <th scope="row">Average Height (cm)</th>
+                                        <td id="average_height">Larry the Bird</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Average Lifespan</th>
+                                        <td id="average_lifespan">Larry the Bird</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Language</th>
+                                        <td id="language">Larry the Bird</td>
+                                    </tr>
+                                        <tr>
+                                        <th scope="row">Hair Colors</th>
+                                        <td id="hair_colors">Larry the Bird</td>
+                                        </tr>
+                                      <tr>
+                                        <th scope="row">Eye Colors</th>
+                                        <td id="eye_colors">Larry the Bird</td>
+                                        </tr>
+                                      <tr>
+                                        <th scope="row">Skin Colors</th>
+                                        <td id="skin_colors">Larry the Bird</td>
+                                        </tr>
+                                     
+                                </table>
+                                   
+                                    </tbody>
+                                  <!--
+                        <tr>
+                                <button type="button" class="btn btn-outline-info text-nowrap btn-block" href="" id="filmsExpand">Related Films
+                        </tr>
+                      -->
+                        </tbody>
+                      
+                </fieldset>
+
+            
+    </div>
+    <div class="col-4" id="films1" >
+            <fieldset>
+            <p>Related Films:</p>
+            <table class="table" id="filmsTable">            
+            </table>
+                </fieldset>
+   <div id = "filmCrawl">
+     <p>In today's world, people live on one planet, and one planet only (or do they??)
+       but in the world of star wars there are many planets and many people.  Are they human? Can 
+       their ships hold cargo? And most importantly, what color are thier EYES???
+     </p>
+   </div>             
+        
+</div>
+</div>
+             <!--Results navigation-->
+        <nav>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button class="btn btn-secondary" id="prev">Previous 10</button>
+                <button class="btn btn-secondary" id="next">Next 10</button>
+                </div>
+              </nav>
+            
+            </div>
+       
+          
+
+    
+    <!--link to js file-->
+    <script type="text/javascript" src="starWars.js"></script>
+    <!--bootstrap links-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
